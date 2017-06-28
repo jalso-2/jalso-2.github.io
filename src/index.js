@@ -32,25 +32,10 @@ const projects = [
   },
 ];
 
-const blogs = [
-  {
-    name: 'Using TravisCI for continuous integration to GitHub organizations',
-    publishedDate: 'June 6, 2017',
-    image: '',
-    file: 'travis_ci_continuous_gh.md',
-  },
-  {
-    name: 'Using Sequelize ORM to manage relationships in a PostgreSQL database',
-    publishedDate: 'May 30, 2017',
-    image: '',
-    file: './blogs/sequelize_w_postgres.md'
-  },
-];
-
 ReactDOM.render(
   <main>
     <BrowserRouter>
-      <App blogs={blogs} projects={projects} />
+      <App projects={projects} />
     </BrowserRouter>
   </main>
   , document.getElementById('root'));
