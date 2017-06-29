@@ -13,9 +13,26 @@ const AboutMe = () => {
           <br />
           <Well> 
             <h2> About Us </h2>
-            <p>
-              Lipsum Stuffs
-            </p>
+            <Row>
+              <Col xs={12} sm={12} md={4} lg={4}>
+                <Image src='./images/james.jpg' alt='James Goedert' rounded />              
+                <p>
+                  Lipsum Stuffs
+                </p>
+              </Col>
+              <Col xs={12} sm={12} md={4} lg={4}>
+                <Image src='./images/jeralnisha.jpg' alt='Jeralnisha Franklin' rounded />                              
+                <p>
+                  Lipsum Stuffs
+                </p>
+              </Col>
+              <Col xs={12} sm={12} md={4} lg={4}>
+                <Image src='./images/zachary.jpg' alt='Zachary Bergmann' rounded />              
+                <p>
+                  Lipsum Stuffs
+                </p>
+              </Col>
+            </Row>
           </Well>
         </Col>
       </Row>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, NavItem, Navbar } from 'react-bootstrap';
+import { MenuItem, Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 
@@ -14,7 +14,12 @@ const Navigation = () => (
     <Navbar.Collapse>
       <Nav pullRight>
         <IndexLinkContainer to='/'><NavItem>Home</NavItem></IndexLinkContainer>
-        <LinkContainer to='/projects'><NavItem>Projects</NavItem></LinkContainer>
+        <NavDropdown pullRight eventKey={3} title="Applications" id="basic-nav-dropdown">
+          <MenuItem href="http://bargainhound.zacharybergmann.com">Bargain Hound</MenuItem>
+          <MenuItem href="http://spork.zacharybergmann.com">Spork</MenuItem>
+          <MenuItem href="http://pickup.zacharybergmann.com">PickUp</MenuItem>
+          <MenuItem href="http://langsnap.zacharybergmann.com">LangSnap</MenuItem>
+        </NavDropdown>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
